@@ -12,6 +12,9 @@
   <a href="https://linkedin.com/in/vishamay-radadiya-9723vkr154982" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
+  <a href="https://vishamay-radadiya-devops-engineer-resume.tiiny.site" target="_blank">
+    <img src="https://img.shields.io/badge/My%20Resume-34A853?style=for-the-badge&logo=read.cv&logoColor=white" />
+  </a>
   <a href="https://medium.com/@vishamay501" target="_blank">
     <img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" />
   </a>
