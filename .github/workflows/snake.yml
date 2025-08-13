@@ -1,8 +1,8 @@
 name: Generate Snake Animation
 
 on:
-  schedule: # every 12 hours
-    - cron: "0 */12 * * *"
+  schedule:
+    - cron: "0 */12 * * *" # every 12 hours
   workflow_dispatch:
 
 jobs:
@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: Checkout repository
+      - name: Checkout main branch
         uses: actions/checkout@v3
 
       - name: Generate Snake
@@ -20,11 +21,12 @@ jobs:
           github_user_name: vishamay123
           outputs: dist/github-contribution-grid-snake.svg
 
-      - name: Push Snake to output branch
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: "Generated Snake"
-          add: "dist/github-contribution-grid-snake.svg"
-          new_branch: output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push to output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin
+          git checkout -B output
+          git add dist/github-contribution-grid-snake.svg
+          git commit -m "Generated Snake" || echo "No changes to commit"
+          git push origin output --force
