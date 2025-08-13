@@ -12,8 +12,10 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout main branch
+      - name: Checkout repository with full history
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # fetch all history so branches are available
 
       - name: Generate Snake
         uses: Platane/snk@v3
@@ -25,8 +27,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin
-          git checkout -B output
+          git checkout --orphan output   # create output branch without history
+          git reset
           git add dist/github-contribution-grid-snake.svg
-          git commit -m "Generated Snake" || echo "No changes to commit"
+          git commit -m "Generated Snake"
           git push origin output --force
