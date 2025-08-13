@@ -60,11 +60,6 @@
 
 ---
 
-## 🐍 Fun Contribution Snake
-![snake gif](https://github.com/vishamay123/vishamay123/blob/output/github-contribution-grid-snake.svg)
-
----
-
 ## 📬 Connect with Me
 <p align="center">
   <a href="https://linkedin.com/in/vishamay-radadiya-9723vkr154982" target="_blank">
