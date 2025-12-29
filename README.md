@@ -34,7 +34,7 @@
 
 ## 🚀 About Me
 <p>
-  Hello! I'm a third-year Computer Engineering student at VGEC, deeply passionate about building the future of the cloud. ☁️ My journey is all about designing, automating, and scaling modern applications using the latest in DevOps and cloud-native technologies.
+  Hello! I'm a final-year Computer Engineering student at VGEC, deeply passionate about building the future of the cloud. ☁️ My journey is all about designing, automating, and scaling modern applications using the latest in DevOps and cloud-native technologies.
 </p>
 
 - 🎓 **Studying:** B.E. in Computer Engineering (Class of 2027).
